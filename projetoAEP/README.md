@@ -1,2 +1,0 @@
-# projetoAEP
-Projeto acadêmico 
