@@ -12,7 +12,7 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#" target="self" rel="next">Login</a></li>
+                <li><a href="login.jsp" target="self" rel="next">Login</a></li>
                 <li><a href="usuario.jsp" target="self" rel="next">Cadastro</a></li>
             </ul>
 

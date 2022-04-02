@@ -23,7 +23,7 @@
         daoUsuario.cadastrarUsuario(usuario);
         
         out.print("Usuário cadastrado com sucesso!");
-        out.print("<meta http-equiv='refresh' content='3, url=index.jsp'>");
+        out.print("<meta http-equiv='refresh' content='3, url=login.jsp'>");
         
     }catch(Exception erro){
         throw new RuntimeException("Erro ao executar cadastro usuario: " + erro.getMessage());

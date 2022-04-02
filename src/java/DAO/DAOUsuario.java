@@ -37,5 +37,18 @@ public class DAOUsuario {
             throw new RuntimeException("Erro DAO cadastrar usuário. " + erro.getMessage());
         }
     }
+    
+    public boolean loginUsuario(String emailUsuario, String senhaUsuario){
+        try {
+            String selectUsuarioSQL = "SELECT * FROM usu_usuario WHERE USU_EMAIL = '" + emailUsuario + "' AND USU_SENHA = '" + senhaUsuario + "'";
+            statement = conexao.prepareStatement(selectUsuarioSQL);
+            resultSet = statement.executeQuery(selectUsuarioSQL);
+            
+            return resultSet.next();
+            
+        } catch (SQLException erro) {
+            throw new RuntimeException("Erro DAO login usuário. " + erro.getMessage());
+        }
+    }
 
 }
