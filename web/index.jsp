@@ -6,6 +6,16 @@
         <title>TÍTULO</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <h1>Projeto AEP</h1>
+            <p>Pesquisa...</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" target="self" rel="next">Login</a></li>
+                <li><a href="usuario.jsp" target="self" rel="next">Cadastro</a></li>
+            </ul>
+
+        </nav>
     </body>
 </html>
