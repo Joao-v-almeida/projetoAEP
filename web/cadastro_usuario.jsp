@@ -22,8 +22,10 @@
         
         daoUsuario.cadastrarUsuario(usuario);
         
-        out.print("Usuário cadastrado com sucesso!");
-        out.print("<meta http-equiv='refresh' content='3, url=login.jsp'>");
+        out.print("<script>");
+            out.print("alert('Usuário cadastrado com sucesso. Por favor realize o login')");
+        out.print("</script>");
+        out.print("<meta http-equiv='refresh' content='0, url=login.jsp'>");
         
     }catch(Exception erro){
         throw new RuntimeException("Erro ao executar cadastro usuario: " + erro.getMessage());

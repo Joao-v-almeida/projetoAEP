@@ -2,7 +2,11 @@
 <%@page import="DAO.DAOUsuario"%>
 <%@page import="MODEL.Usuario"%>
 
-
+<script>
+    function ok(){
+        alert('Sucesso');
+    }
+</script>
 <%
     Usuario usuario = new Usuario();
     DAOUsuario daoUsuario = new DAOUsuario();
@@ -14,8 +18,7 @@
         boolean returnLogin = daoUsuario.loginUsuario(emailUsuario, senhaUsuario);
         
         if (returnLogin) {
-            out.print("Login realizado com sucesso!");
-            out.print("<meta http-equiv='refresh' content='2, url=index.jsp'>");
+            out.print("<meta http-equiv='refresh' content='0, url=index.jsp'>");
         }else{
            out.print("<script>");
                out.print("alert('Login incorreto!')");

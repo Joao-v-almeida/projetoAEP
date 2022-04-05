@@ -2,6 +2,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <script>
+            function formatar(mascara, documento) {
+                var i = documento.value.length;
+                var saida = mascara.substring(0, 1);
+                var texto = mascara.substring(i);
+
+                if (texto.substring(0, 1) !== saida) {
+                    documento.value += texto.substring(0, 1);
+                }
+            }
+        </script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="style_login_cadastro.css"/>
@@ -11,7 +24,7 @@
 
         <div class="principal">
             <div id="cadastro">
-                <form method="post" action=""> 
+                <form method="post" action="cadastro_usuario.jsp"> 
                     <h1>Cadastro</h1> 
 
                     <p> 
@@ -31,7 +44,7 @@
 
                     <p>
                         <label for="telefoneUsuario" >Telefone</label><br>
-                        <input type="tel" name="telefoneUsuario" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" placeholder="Digite seu telefone..."/><br> <br>
+                        <input type="tel" name="telefoneUsuario" maxlength="13" onkeypress="formatar('## #####-####', this)"  placeholder="Ex.: 00 00000-0000" required="required"/><br> <br>
                     </p>
 
                     <p> 
