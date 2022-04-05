@@ -3,16 +3,37 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style_login_cadastro.css"/>
         <title>Login</title>
     </head>
     <body>
-        <h1>Login</h1>
-        <form action="login_sistema.jsp" method="post">         
-            <label for="emailUsuario">EMAIL</label><br>
-            <input type="email" name="emailUsuario" placeholder="Digite seu email..."/><br> <br>
-            <label for="senhaUsuario">SENHA</label><br>
-            <input type="password" name="senhaUsuario" placeholder="Digite sua senha..."/><br> <br>
-            <input type="submit" value="ENTRAR"/>
-        </form>
+
+        <div class="principal">      
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form action="login_sistema.jsp" method="post"> 
+                    <h1>Login</h1> 
+                    <p> 
+                        <label for="emailUsuario">E-mail</label>
+                        <input id="emailUsuario" name="emailUsuario" required="required" type="email" placeholder="ex. contato@gmail.com"/>
+                    </p>
+
+                    <p> 
+                        <label for="senhaUsuario">Senha</label>
+                        <input id="senhaUsuario" name="senhaUsuario" required="required" type="password"/> 
+                    </p>
+
+                    <p> 
+                        <input type="submit" value="ENTRAR" /> 
+                    </p>
+
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="usuario.jsp">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
     </body>
 </html>
