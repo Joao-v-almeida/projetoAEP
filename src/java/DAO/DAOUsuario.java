@@ -6,6 +6,7 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 public class DAOUsuario {
     
@@ -19,9 +20,11 @@ public class DAOUsuario {
     }
     
     public void cadastrarUsuario(Usuario usuario){
+        
         try {
+            Date dataCadastroUsuario = new Date();
             //SCRIPT INSERT SQL
-            String insertUsuarioSQL = "INSERT INTO usu_usuario (USU_NOME, USU_EMAIL, USU_TELEFONE, USU_DATA_NASCIMENTO, USU_SENHA) VALUES (?,?,?,?,?)";
+            String insertUsuarioSQL = "INSERT INTO usu_usuario (USU_NOME, USU_EMAIL, USU_TELEFONE, USU_DATA_NASCIMENTO, USU_SENHA, USU_DATA_CADASTRO) VALUES (?,?,?,?,?,?)";
             preparedStatement = conexao.prepareStatement(insertUsuarioSQL);
             
             preparedStatement.setString(1, usuario.getNomeUsuario());
@@ -29,6 +32,7 @@ public class DAOUsuario {
             preparedStatement.setString(3, usuario.getTelefoneUsuario());
             preparedStatement.setString(4, usuario.getDataNascimentoUsuario());
             preparedStatement.setString(5, usuario.getSenhaUsuario());
+            preparedStatement.setDate(6, new java.sql.Date(dataCadastroUsuario.getTime()));
             
             
             preparedStatement.execute();
