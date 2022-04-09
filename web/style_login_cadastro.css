@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 /* CSS reset */
 *, *:before, *:after { 
   margin:0;
@@ -29,8 +30,7 @@ h1{
   font-size: 48px;
   color: rgb(30, 49, 87);
   padding: 2px 0 10px 0;
-  font-family: Arial,sans-serif;
-  font-weight: bold;
+  font-family: 'Righteous', cursive;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -47,6 +47,7 @@ h1:after{
 
 p{
   margin-bottom:15px;
+  font-family: 'Sarala', sans-serif;
 }
  
 .principal p:first-child{

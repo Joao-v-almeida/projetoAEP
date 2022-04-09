@@ -24,7 +24,7 @@
                     </p>
 
                     <p> 
-                        <input type="submit" value="ENTRAR" /> 
+                        <input type="submit" value="Entrar" /> 
                     </p>
 
                     <p class="link">
