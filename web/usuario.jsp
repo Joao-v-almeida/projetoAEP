@@ -8,11 +8,11 @@
                 var i = documento.value.length;
                 var saida = mascara.substring(0, 1);
                 var texto = mascara.substring(i);
-
                 if (texto.substring(0, 1) !== saida) {
                     documento.value += texto.substring(0, 1);
                 }
             }
+
         </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +50,12 @@
                     <p> 
                         <label for="senhaUsuario">Senha</label>
                         <input id="senhaUsuario" name="senhaUsuario" required="required" type="password" placeholder="ex. 1234"/>
+                    </p>
+
+                    <p> 
+                        <input id="consentimento" name="consentimento" type="checkbox" value="false" required oninvalid="('Consentimento obrigátorio para realizar o cadastro.')"/>
+                        <label for="consentimento">Autorizo a recolha e o armazenamento dos dados acima.</label>
+
                     </p>
 
                     <p> 
