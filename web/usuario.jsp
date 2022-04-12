@@ -53,7 +53,7 @@
                     </p>
 
                     <p> 
-                        <input id="consentimento" name="consentimento" type="checkbox" value="false" required oninvalid="('Consentimento obrigátorio para realizar o cadastro.')"/>
+                        <input id="consentimento" name="consentimento" type="checkbox" value="false" required required="" oninvalid="setCustomValidity('O Consentimento dos dados é obrigátorio para realizar o cadastro.')" oninput="setCustomValidity('')"/>
                         <label for="consentimento">Autorizo a recolha e o armazenamento dos dados acima.</label>
 
                     </p>
