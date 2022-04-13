@@ -23,7 +23,7 @@
         <main class="conteudo">
             <section class="conteudo-principal">
                 <div class="conteudo-principal-escrito">
-                    <h1 class="conteudo-principal-escrito-titulo">Espaço Saúde</h1>
+                    <h1 class="conteudo-principal-escrito-titulo">Ajude você - Saúde mental!</h1>
                     <h2 class="conteudo-principal-escrito-subtitulo">Se cuide, preencha o formulário e receba mais detalhes sobre sua saúde mental!</h2>
                     <a href="usuario.jsp" target="self" rel="next"><button class="conteudo-principal-escrito-botao">Cadastre-se</button></a>
                 </div>
