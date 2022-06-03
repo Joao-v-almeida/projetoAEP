@@ -18,7 +18,7 @@
         boolean returnLogin = daoUsuario.loginUsuario(emailUsuario, senhaUsuario);
         
         if (returnLogin) {
-            out.print("<meta http-equiv='refresh' content='0, url=index.jsp'>");
+            out.print("<meta http-equiv='refresh' content='0, url=principal.jsp'>");
         }else{
            out.print("<script>");
                out.print("alert('Login incorreto!')");

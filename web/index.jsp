@@ -56,6 +56,7 @@
                 <p class="conteudo-secundario-paragrafo">Essa síndrome pode resultar em estado de depressão profunda e por isso é essencial procurar apoio profissional no surgimento dos primeiros sintomas.</p><br>
                 <p class="conteudo-secundario-paragrafo"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sindrome-de-burnout" target="_blank">Artigo completo!</a></p><br>
             </section><br>
+            
         </main>
 
         <footer class="rodape">
