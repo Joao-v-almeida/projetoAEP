@@ -40,7 +40,7 @@
                 <p class="conteudo-secundario-paragrafo">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/AOAP11o7jNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p><br>
-                <a href="formulario_ansiedade.jsp" target="self" rel="next"><button class="conteudo-principal-escrito-botao">Preencher formulário</button></a><br><br>
+                <a href="formulario_depressao.jsp" target="self" rel="next"><button class="conteudo-principal-escrito-botao">Preencher formulário</button></a><br><br>
             </section><br>
                 
             <section class="conteudo-secundario">
@@ -48,7 +48,7 @@
                 <p class="conteudo-secundario-paragrafo">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jSmhjqdqvcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p><br>
-                <a href="formulario_ansiedade.jsp" target="self" rel="next"><button class="conteudo-principal-escrito-botao">Preencher formulário</button></a><br><br>
+                <a href="formulario_burnout.jsp" target="self" rel="next"><button class="conteudo-principal-escrito-botao">Preencher formulário</button></a><br><br>
             </section><br>
             
         </main>
